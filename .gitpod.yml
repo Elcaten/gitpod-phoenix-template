@@ -1,6 +1,10 @@
 image:
-  file: .gitpod.Dockerfile
-  
+    file: .gitpod.Dockerfile
+
 tasks:
-  - init: mix compile
-    command: iex -S mix
+    - name: Dependencies & Database
+      init: |
+          docker pull  
+          docker up -d
+      command: npm run dev
+
