@@ -5,6 +5,6 @@ tasks:
     - name: Dependencies & Database
       init: |
           docker pull  
-          docker up -d
+          docker-compose up -d
       command: echo started!
 
