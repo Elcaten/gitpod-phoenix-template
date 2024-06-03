@@ -2,7 +2,7 @@ image:
     file: .gitpod.Dockerfile
 
 tasks:
-    - name: Dependencies & Database
+    - name: Launch DB
       init: |
           docker pull  
           docker-compose up -d
